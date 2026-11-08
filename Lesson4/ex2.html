@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>หน้ารวมบทเรียน</title>
+    <style>
+        body {
+            font-family: system-ui, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 24px;
+            background: #f5f6fa;
+            color: #222;
+        }
+        h1 { text-align: center; }
+        h2 { margin-top: 32px; }
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 16px;
+        }
+        .card {
+            display: block;
+            padding: 20px;
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            text-decoration: none;
+            color: inherit;
+            transition: transform 0.15s;
+        }
+        .card:hover { transform: translateY(-4px); }
+        .card strong { display: block; margin-bottom: 6px; color: #2b5fd9; }
+        .repo { text-align: center; margin-top: 40px; }
+    </style>
+</head>
+<body>
+    <h1>หน้ารวมบทเรียน</h1>
+
+    <h2>Lesson 1</h2>
+    <div class="cards">
+        <a class="card" href="Lesson1/ex1.html"><strong>Lesson 1 – ตัวอย่างที่ 1</strong>เปิดไฟล์ ex1.html</a>
+        <a class="card" href="Lesson1/ex2.html"><strong>Lesson 1 – ตัวอย่างที่ 2</strong>เปิดไฟล์ ex2.html</a>
+    </div>
+
+    <h2>Lesson 2</h2>
+    <div class="cards">
+        <a class="card" href="Lesson2/ex1.html"><strong>Lesson 2 – ตัวอย่างที่ 1</strong>เปิดไฟล์ ex1.html</a>
+        <a class="card" href="Lesson2/ex2.html"><strong>Lesson 2 – ตัวอย่างที่ 2</strong>เปิดไฟล์ ex2.html</a>
+    </div>
+
+    <h2>Lesson 3</h2>
+    <div class="cards">
+        <a class="card" href="Lesson3/ex1.html"><strong>Lesson 3 – ตัวอย่างที่ 1</strong>เปิดไฟล์ ex1.html</a>
+        <a class="card" href="Lesson3/ex2.html"><strong>Lesson 3 – ตัวอย่างที่ 2</strong>เปิดไฟล์ ex2.html</a>
+    </div>
+
+    <p class="repo">
+        <a href="https://github.com/somchai-dev/PHP_9920">ดู repo บน GitHub</a>
+    </p>
+</body>
+</html>
