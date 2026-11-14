@@ -1,53 +1,6 @@
-<!DOCTYPE html>
-<html lang="th">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>เกี่ยวกับฉัน</title>
-    <!-- ใช้ Bootstrap และมีหน้าตาชุดเดียวกับหน้า index (A6) -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-</head>
-<body class="bg-light">
-
-    <!-- แถบด้านบน (Navbar) -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-4">
-        <div class="container">
-            <a class="navbar-brand" href="index.html">หน้าแรก</a>
-            <div class="collapse navbar-collapse">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="about.html">เกี่ยวกับฉัน</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-8">
-                <div class="card shadow-sm p-4">
-                    <!-- หัวข้อ A2 มีคำว่า เกี่ยวกับฉัน -->
-                    <h1 class="h3 mb-4 text-center text-primary">เกี่ยวกับฉัน</h1>
-                    
-                    <!-- ข้อมูลส่วนตัว A3 อยู่ใน <ul id="profile"> ครบถ้วนตามข้อกำหนด -->
-                    <ul id="profile" class="list-group list-group-flush mb-4">
-                        <li class="list-group-item"><strong>ชื่อเล่น:</strong> น้ำฝน</li>
-                        <li class="list-group-item"><strong>งานหรือสิ่งที่ทำอยู่ตอนนี้:</strong> ศึกษาและปฏิบัติงานด้านการพัฒนาระบบ จัดการฐานข้อมูล และทำเนื้อหาดิจิทัล</li>
-                        <li class="list-group-item"><strong>สิ่งที่อยากทำได้หลังเรียนวิชานี้:</strong> พัฒนาเว็บแอปพลิเคชันและเชื่อมต่อระบบฐานข้อมูลด้วย PHP ได้อย่างคล่องแคล่วและสมบูรณ์</li>
-                        <li class="list-group-item"><strong>GitHub:</strong> <a href="https://github.com/Chotiros-Chuichai" target="_blank">https://github.com/Chotiros-Chuichai</a></li>
-                    </ul>
-
-                    <!-- ลิงก์กลับหน้าแรก A5 -->
-                    <div class="text-center">
-                        <a href="index.html" class="btn btn-secondary">← กลับหน้าแรก</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Bootstrap JS Bundle -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-</html>
+<!doctype html><html lang="th"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="เกี่ยวกับฉัน - Lesson 4 PHP_7030"><title>เกี่ยวกับฉัน | Lesson 4</title><style>
+:root{--ink:#26345f;--muted:#66718f;--paper:#f7f8ff;--purple:#e9e1ff;--blue:#dff0ff;--mint:#dcf7eb;--yellow:#fff1c9;--line:#d9def0}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at 8% 5%,#e2efff 0 130px,transparent 131px),radial-gradient(circle at 95% 20%,#f0e4ff 0 160px,transparent 161px),var(--paper);color:var(--ink);font:16px/1.75 system-ui,-apple-system,"Segoe UI",sans-serif}
+.wrap{width:min(980px,calc(100% - 28px));margin:26px auto 50px}.top{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:14px 18px;background:#ffffffd9;border:1px solid white;border-radius:18px;box-shadow:0 8px 24px #34436c12}.brand{font-weight:800;text-decoration:none;color:var(--ink)}.top a,.link{color:#5c54b5}.hero{margin:20px 0;padding:30px;border-radius:26px;background:linear-gradient(120deg,#fff,#eeeaff);border:1px solid white;box-shadow:0 12px 30px #34436c12}.tag{display:inline-block;padding:5px 12px;border-radius:20px;background:var(--purple);font-size:12px;font-weight:700;letter-spacing:.6px}h1,h2,h3{line-height:1.3}h1{font-size:clamp(28px,5vw,42px);margin:12px 0}h2{font-size:23px;margin:0 0 12px}p{color:var(--muted)}.panel{padding:22px;margin:16px 0;background:#fff;border:1px solid var(--line);border-radius:20px;box-shadow:0 6px 18px #34436c0b}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px}.tile{display:block;padding:18px;border-radius:17px;border:1px solid var(--line);background:linear-gradient(145deg,#fff,var(--blue));text-decoration:none;color:var(--ink)}.tile:nth-child(2n){background:linear-gradient(145deg,#fff,var(--mint))}.tile strong{display:block;font-size:17px}.tile small{color:var(--muted)}.btn{display:inline-block;padding:10px 16px;margin:4px 5px 4px 0;border-radius:12px;background:#6b63c8;color:white;text-decoration:none;font-weight:650;border:0;cursor:pointer}.btn.alt{background:#e9e5ff;color:#48428f}.btn.next{background:#dff4e9;color:#205f4a}.nav{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;margin:22px 0}.muted{color:var(--muted)}label{display:block;font-weight:650;margin:12px 0 5px}input{width:100%;padding:12px;border:1px solid #cbd2e5;border-radius:11px;font:inherit}input:focus{outline:3px solid #e3ddff;border-color:#8176d6}.result{padding:14px;border-radius:12px;background:#f0edff;margin-top:14px;min-height:48px}ul{padding-left:24px}li{margin:6px 0}footer{text-align:center;color:var(--muted);font-size:13px;padding:18px}
+@media(max-width:560px){.hero{padding:22px}.panel{padding:17px}.top{align-items:flex-start;flex-direction:column}}
+</style></head><body><div class="wrap"><header class="top"><a class="brand" href="index.html">✦ PHP_7030 / LESSON 04</a><a href="../index.html">กลับเว็บไซต์หลัก ↗</a></header><main><section class="hero"><span class="tag">LESSON 04 · EXERCISE 7</span><h1>เกี่ยวกับฉัน</h1><p>ข้อมูลแนะนำผู้จัดทำและเป้าหมายในการเรียนรู้.</p></section><section class="panel"><h2>ข้อมูลส่วนตัว</h2><ul id="profile"><li><strong>ชื่อเล่น:</strong> วัน</li><li><strong>สิ่งที่กำลังศึกษา:</strong> การพัฒนาเว็บไซต์และการเขียนโปรแกรม</li><li><strong>ความสนใจ:</strong> เทคโนโลยี งานช่าง และการสร้างสรรค์ผลงานดิจิทัล</li><li><strong>เป้าหมายหลังเรียน:</strong> สามารถสร้างเว็บไซต์และพัฒนาเว็บแอปพลิเคชันด้วย HTML, CSS, JavaScript และ PHP ได้</li><li><strong>Repository:</strong> <a class="link" href="https://github.com/WaySpaceOrg/PHP_7030" target="_blank" rel="noopener">WaySpaceOrg/PHP_7030 ↗</a></li></ul><a class="btn alt" href="index.html">← กลับหน้าแรก Lesson 4</a></section><nav class="nav" aria-label="นำทางแบบฝึกหัด"><a class="btn alt" href="ex6.html">← แบบฝึกหัดก่อนหน้า</a><a class="btn next" href="index.html">ไปหน้าแรก Lesson 4 →</a></nav></main><footer>PHP_7030 · Lesson 4 · เรียนรู้และลงมือปฏิบัติ</footer></div></body></html>
