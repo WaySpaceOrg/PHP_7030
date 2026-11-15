@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Task 1 · แสดงผลด้วย PHP</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="lesson">
+        <a class="back" href="index.html">← กลับ Lesson 5</a>
+        <header class="hero">
+            <span class="tag">TASK 01 · PHP</span>
+            <h1>แสดงผลด้วย PHP</h1>
+            <p>ทดลอง echo การเชื่อมข้อความ และ short echo tag</p>
+        </header>
+        <section class="panel">
+            <h2>ตัวอย่างผลลัพธ์</h2>
+            <div class="output">สวัสดีโลก!<h1>ยินดีต้อนรับ</h1>สวัสดี สมชาย!</div>
+            <p class="message">ชื่อของฉันคือ สมชาย</p>
+        </section>
+        <section class="panel">
+            <h2>โค้ด PHP</h2>
+            <pre class="output"><code>&lt;?php
+// แสดงผลด้วย echo
+echo "สวัสดีโลก!";
+echo "&lt;h1&gt;ยินดีต้อนรับ&lt;/h1&gt;";
+
+// ใช้ . เชื่อมข้อความ
+$name = "สมชาย";
+echo "สวัสดี " . $name . "!";
+
+// Short echo tag
+?&gt;
+&lt;p&gt;ชื่อของฉันคือ &lt;?= $name ?&gt;&lt;/p&gt;</code></pre>
+        </section>
+    </main>
+</body>
+</html>

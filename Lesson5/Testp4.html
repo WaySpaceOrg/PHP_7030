@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Task 4 · ตัวดำเนินการและ String</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="lesson">
+        <a class="back" href="index.html">← กลับ Lesson 5</a>
+        <header class="hero">
+            <span class="tag">TASK 04 · PHP</span>
+            <h1>ตัวดำเนินการและ String</h1>
+            <p>ทดลองคำนวณตัวเลข จัดการข้อความ และจัดรูปแบบตัวเลขก่อนแสดงผล</p>
+        </header>
+
+        <section class="result-grid" aria-label="ผลลัพธ์ตัวอย่าง">
+            <article class="result-card">
+                <h2>บวก · 10 + 3</h2>
+                <p class="result">13</p>
+            </article>
+            <article class="result-card">
+                <h2>หารเอาเศษ · 10 % 3</h2>
+                <p class="result">1</p>
+            </article>
+            <article class="result-card">
+                <h2>ยกกำลัง · 10 ** 3</h2>
+                <p class="result">1000</p>
+            </article>
+            <article class="result-card">
+                <h2>จัดรูปแบบอีเมล</h2>
+                <p class="result">hello@email.com</p>
+            </article>
+            <article class="result-card">
+                <h2>ฟังก์ชัน String</h2>
+                <pre>strlen: 11
+substr: Hello
+str_replace: Hello PHP
+strpos: 6</pre>
+            </article>
+            <article class="result-card">
+                <h2>จัดรูปแบบราคา</h2>
+                <pre>1,234,568
+1,234,567.89</pre>
+            </article>
+            <article class="result-card">
+                <h2>ทศนิยม 2 ตำแหน่ง</h2>
+                <pre>23.1
+23.10</pre>
+            </article>
+        </section>
+
+        <section class="panel">
+            <h2>โค้ด PHP</h2>
+            <pre class="output"><code>&lt;?php
+$a = 10; $b = 3;
+echo $a + $b;    // 13
+echo $a % $b;    // 1 (เศษ)
+echo $a ** $b;   // 1000 (ยกกำลัง)
+
+// String functions
+$email = "  Hello@Email.COM  ";
+$email = trim(strtolower($email));  // hello@email.com
+
+$text = "Hello World";
+echo strlen($text);           // 11
+echo substr($text, 0, 5);    // Hello
+echo str_replace("World","PHP",$text); // Hello PHP
+echo strpos($text, "World"); // 6
+
+// จัดรูปแบบตัวเลขสำหรับแสดงผล
+$price = 1234567.891;
+echo number_format($price);       // 1,234,568
+echo number_format($price, 2);    // 1,234,567.89
+
+$area = 23.1;
+echo $area;                       // 23.1
+echo number_format($area, 2);     // 23.10
+?&gt;</code></pre>
+        </section>
+
+        <p class="message">หน้า HTML นี้เป็นตัวอย่างผลลัพธ์แบบ static; โค้ด PHP อยู่ในไฟล์ <code>Testp4.php</code></p>
+    </main>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Task 2 · ตัวแปรและชนิดข้อมูล</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="lesson">
+        <a class="back" href="index.html">← กลับ Lesson 5</a>
+        <header class="hero">
+            <span class="tag">TASK 02 · PHP</span>
+            <h1>ตัวแปรและชนิดข้อมูล</h1>
+            <p>ตรวจชนิดข้อมูลด้วย <code>gettype()</code> และดูค่าพร้อมชนิดด้วย <code>var_dump()</code></p>
+        </header>
+
+        <section class="result-grid" aria-label="ผลลัพธ์ตัวอย่าง">
+            <article class="result-card">
+                <h2>String</h2>
+                <p class="result">string</p>
+            </article>
+            <article class="result-card">
+                <h2>Integer</h2>
+                <pre>int(30)</pre>
+            </article>
+            <article class="result-card">
+                <h2>Float</h2>
+                <p class="result">double · 3.75</p>
+            </article>
+            <article class="result-card">
+                <h2>Boolean</h2>
+                <p class="result">boolean · true</p>
+            </article>
+            <article class="result-card">
+                <h2>NULL</h2>
+                <p class="result">NULL</p>
+            </article>
+            <article class="result-card">
+                <h2>String interpolation</h2>
+                <p class="result">ชื่อ: สมชาย อายุ: 30 ปี</p>
+            </article>
+            <article class="result-card">
+                <h2>ค่าคงที่</h2>
+                <p class="result">PI = 3.14159</p>
+            </article>
+        </section>
+
+        <section class="panel">
+            <h2>โค้ด PHP</h2>
+            <pre class="output"><code>&lt;?php
+$name = "สมชาย";
+$age = 30;
+$gpa = 3.75;
+$active = true;
+$note = null;
+
+echo gettype($name);
+var_dump($age);
+echo "ชื่อ: $name อายุ: $age ปี";
+
+define("PI", 3.14159);
+echo PI;
+?&gt;</code></pre>
+        </section>
+        <p class="message">หน้า HTML นี้เป็นตัวอย่างผลลัพธ์แบบ static; โค้ด PHP อยู่ในไฟล์ <code>Task2.php</code></p>
+    </main>
+</body>
+</html>
